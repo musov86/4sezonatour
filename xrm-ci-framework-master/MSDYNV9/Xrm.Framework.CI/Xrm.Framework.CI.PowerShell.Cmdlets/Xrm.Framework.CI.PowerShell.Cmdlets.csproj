@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AF2D810-8E16-4AA1-B3F8-75EB17CF8A24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xrm.Framework.CI.PowerShell.Cmdlets</RootNamespace>
+    <AssemblyName>Xrm.Framework.CI.PowerShell.Cmdlets</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.2.23\lib\net462\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=3.19.8.16603, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.19.8\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform, Version=3.19.8.16603, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.19.8\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CrmSdk.XrmTooling.CoreAssembly.9.1.0.38\lib\net462\Microsoft.Rest.ClientRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.2.23\lib\net462\Microsoft.Xrm.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk.Deployment, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CrmSdk.Deployment.9.0.2.23\lib\net462\Microsoft.Xrm.Sdk.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CrmSdk.Workflow.9.0.2.23\lib\net462\Microsoft.Xrm.Sdk.Workflow.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Tooling.Connector, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CrmSdk.XrmTooling.CoreAssembly.9.1.0.38\lib\net462\Microsoft.Xrm.Tooling.Connector.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.PowerShell.5.ReferenceAssemblies.1.1.0\lib\net4\System.Management.Automation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.2\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddXrmEntityCommand.cs" />
+    <Compile Include="AddXrmLanguagePack.cs" />
+    <Compile Include="AddXrmSolution.cs" />
+    <Compile Include="AddXrmSolutionPatch.cs" />
+    <Compile Include="CompressXrmCMData.cs" />
+    <Compile Include="ExpandXrmCMData.cs" />
+    <Compile Include="ExpandXrmSolution.cs" />
+    <Compile Include="CompressXrmSolution.cs" />
+    <Compile Include="GetXrmConnectionsCommand.cs" />
+    <Compile Include="SetXrmEnvironmentVariableValueCommand.cs" />
+    <Compile Include="GetXrmEnvironmentVariableValueCommand.cs" />
+    <Compile Include="GetXrmSolutionMissingDependenciesCommand.cs" />
+    <Compile Include="GetXrmSolutionMissingComponentsCommand.cs" />
+    <Compile Include="PublishXrmThemeCommand.cs" />
+    <Compile Include="RemoveXrmConnectionCommand.cs" />
+    <Compile Include="GetXrmConnectionCommand.cs" />
+    <Compile Include="SetXrmConnectionCommand.cs" />
+    <Compile Include="CopyXrmSolutionComponentsCommand.cs" />
+    <Compile Include="ExportXrmAccessTeamTemplatesCommand.cs" />
+    <Compile Include="ExportXrmSolutionsCommand.cs" />
+    <Compile Include="ExportXrmSolutionCommand.cs" />
+    <Compile Include="GetXrmEntitiesCommand.cs" />
+    <Compile Include="GetXrmEntityCommand.cs" />
+    <Compile Include="GetXrmLanguagePacks.cs" />
+    <Compile Include="GetXrmPluginRegistrationClassCommand.cs" />
+    <Compile Include="GetXrmPluginRegistrationFromAssemblyCommand.cs" />
+    <Compile Include="GetXrmServiceEndpointRegistrationCommand.cs" />
+    <Compile Include="GetXrmPluginRegistrationCommand.cs" />
+    <Compile Include="GetXrmSolutionPatchesCommand.cs" />
+    <Compile Include="GetXrmSolutionCommand.cs" />
+    <Compile Include="GetXrmSolutionImportLog.cs" />
+    <Compile Include="GetXrmSolutionInfoFromFolderCommand.cs" />
+    <Compile Include="GetXrmSolutionInfoFromZipCommand.cs" />
+    <Compile Include="ImportXrmAccessTeamTemplatesCommand.cs" />
+    <Compile Include="ImportXrmSolutionsCommand.cs" />
+    <Compile Include="Logging\PSLogger.cs" />
+    <Compile Include="MergeXrmSolutionCommand.cs" />
+    <Compile Include="ImportXrmSolutionCommand.cs" />
+    <Compile Include="MergeXrmSolutionPatches.cs" />
+    <Compile Include="NewXrmBulkDeleteJobCommand.cs" />
+    <Compile Include="NewXrmEntityCommand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublishXrmCustomizationsCommand.cs" />
+    <Compile Include="PublishXrmDuplicateRuleCommand.cs" />
+    <Compile Include="RemoveXrmEntityAttribute.cs" />
+    <Compile Include="RemoveXrmEntityCommand.cs" />
+    <Compile Include="RemoveXrmOptionCommand.cs" />
+    <Compile Include="RemoveXrmWorkflowCommand.cs" />
+    <Compile Include="RemoveXrmRecordCommand.cs" />
+    <Compile Include="SetXrmDashboardRoleCommand.cs" />
+    <Compile Include="SetXrmEntityStateCommand.cs" />
+    <Compile Include="SetXrmWorkflowStateCommand.cs" />
+    <Compile Include="CompressXrmSolutionsUsingConfig.cs" />
+    <Compile Include="ShowXrmLogging.cs" />
+    <Compile Include="RemoveXrmSolutionComponentsCommand.cs" />
+    <Compile Include="SelectXrmWhoAmICommand.cs" />
+    <Compile Include="RemoveXrmPluginAssembly.cs" />
+    <Compile Include="SetXrmServiceEndpointRegistration.cs" />
+    <Compile Include="SetXrmWebResourcesFromFolder.cs" />
+    <Compile Include="SetXrmWebResource.cs" />
+    <Compile Include="SetXrmPluginAssembly.cs" />
+    <Compile Include="SetXrmEntityCommand.cs" />
+    <Compile Include="SetXrmSolutionVersionCommand.cs" />
+    <Compile Include="SetXrmSolutionVersionInFolderCommand.cs" />
+    <Compile Include="SplitXrmPluginAssembly.cs" />
+    <Compile Include="CommandBase.cs" />
+    <Compile Include="XrmCommandBase.cs" />
+    <Compile Include="SetXrmPluginRegistration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\ApplySolution.ps1" />
+    <None Include="bin\Debug\UpdateConfigurationRecords.ps1" />
+    <None Include="bin\Debug\Xrm.Framework.CI.PowerShell.Cmdlets.dll.config" />
+    <None Include="bin\Debug\XrmCIFramework.9.0.0.nupkg" />
+    <None Include="bin\Debug\XrmCIFramework.9.0.0.symbols.nupkg" />
+    <None Include="bin\Release\Xrm.Framework.CI.PowerShell.Cmdlets.dll.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Xrm.Framework.CI.PowerShell.Cmdlets.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Xrm.Framework.CI.PowerShell.Cmdlets.psd1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Microsoft.Crm.Sdk.Proxy.dll" />
+    <Content Include="bin\Debug\Microsoft.Crm.Sdk.Proxy.xml" />
+    <Content Include="bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
+    <Content Include="bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll" />
+    <Content Include="bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml" />
+    <Content Include="bin\Debug\Microsoft.Management.Infrastructure.dll" />
+    <Content Include="bin\Debug\Microsoft.Xrm.Sdk.Deployment.dll" />
+    <Content Include="bin\Debug\Microsoft.Xrm.Sdk.Deployment.xml" />
+    <Content Include="bin\Debug\Microsoft.Xrm.Sdk.dll" />
+    <Content Include="bin\Debug\Microsoft.Xrm.Sdk.xml" />
+    <Content Include="bin\Debug\Microsoft.Xrm.Tooling.Connector.dll" />
+    <Content Include="bin\Debug\Microsoft.Xrm.Tooling.Connector.xml" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="bin\Debug\System.Management.Automation.dll" />
+    <Content Include="bin\Debug\System.Management.Automation.xml" />
+    <Content Include="bin\Debug\Xrm.Framework.CI.PowerShell.Cmdlets.dll" />
+    <Content Include="bin\Debug\Xrm.Framework.CI.PowerShell.Cmdlets.pdb" />
+    <Content Include="bin\Release\Microsoft.Crm.Sdk.Proxy.dll" />
+    <Content Include="bin\Release\Microsoft.Crm.Sdk.Proxy.xml" />
+    <Content Include="bin\Release\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
+    <Content Include="bin\Release\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll" />
+    <Content Include="bin\Release\Microsoft.IdentityModel.Clients.ActiveDirectory.xml" />
+    <Content Include="bin\Release\Microsoft.Management.Infrastructure.dll" />
+    <Content Include="bin\Release\Microsoft.Xrm.Sdk.Deployment.dll" />
+    <Content Include="bin\Release\Microsoft.Xrm.Sdk.Deployment.xml" />
+    <Content Include="bin\Release\Microsoft.Xrm.Sdk.dll" />
+    <Content Include="bin\Release\Microsoft.Xrm.Sdk.xml" />
+    <Content Include="bin\Release\Microsoft.Xrm.Tooling.Connector.dll" />
+    <Content Include="bin\Release\Microsoft.Xrm.Tooling.Connector.xml" />
+    <Content Include="bin\Release\Newtonsoft.Json.dll" />
+    <Content Include="bin\Release\Newtonsoft.Json.xml" />
+    <Content Include="bin\Release\System.Management.Automation.dll" />
+    <Content Include="bin\Release\System.Management.Automation.xml" />
+    <Content Include="bin\Release\Xrm.Framework.CI.PowerShell.Cmdlets.dll" />
+    <Content Include="bin\Release\Xrm.Framework.CI.PowerShell.Cmdlets.pdb" />
+    <Content Include="icon_128x128.png" />
+    <Content Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xrm.Framework.CI.Common\Xrm.Framework.CI.Common.csproj">
+      <Project>{15de1597-6dab-4b21-840c-4818b7bc22ab}</Project>
+      <Name>Xrm.Framework.CI.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>Copy /Y "$(TargetDir)\*.dll" "$(SolutionDir)\Xrm.Framework.CI.PowerShell.Scripts\"</PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties PluginRegistration_4PluginAssemblyExample_1json__JSONSchema="PluginRegistrationSchema.json" PluginRegistration_4WorkflowAssemblyExample_1json__JSONSchema="PluginRegistrationSchema.json" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

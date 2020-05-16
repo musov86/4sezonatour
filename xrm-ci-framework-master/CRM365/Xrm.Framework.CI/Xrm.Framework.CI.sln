@@ -1,0 +1,169 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "Xrm.Framework.CI.PowerShell.Scripts", "Xrm.Framework.CI.PowerShell.Scripts\Xrm.Framework.CI.PowerShell.Scripts.pssproj", "{26E7A989-C329-4B54-A80D-200FC23306B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xrm.Framework.CI.PowerShell.Cmdlets", "Xrm.Framework.CI.PowerShell.Cmdlets\Xrm.Framework.CI.PowerShell.Cmdlets.csproj", "{0AF2D810-8E16-4AA1-B3F8-75EB17CF8A24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA3B7E83-C429-4DA0-913D-C857111DC0B0}"
+	ProjectSection(SolutionItems) = preProject
+		PackageFramework.ps1 = PackageFramework.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xrm.Framework.CI.VSTS.BuildTasks", "Xrm.Framework.CI.VSTS.BuildTasks", "{3763BBA8-F491-4D34-A047-D4ED12EDF387}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tasks", "Tasks", "{BBFA729B-4215-487C-BD89-FD77A7B54C72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMExportSolution", "MSCRMExportSolution", "{C2B3F4B8-4BE8-45E7-9384-55F5F7F56CB8}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMExportSolution\MSCRMExportSolution.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMExportSolution\MSCRMExportSolution.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMExportSolution\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMExportSolution\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMImportSolution", "MSCRMImportSolution", "{67A59419-BDB6-49E9-A5EB-ECEC0F4C84BB}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMImportSolution\MSCRMImportSolution.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMImportSolution\MSCRMImportSolution.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMImportSolution\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMImportSolution\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMPackageDeployer", "MSCRMPackageDeployer", "{8E5BE35E-E21E-436E-BE6B-35E6D81C0ABE}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPackageDeployer\MSCRMPackageDeployer.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPackageDeployer\MSCRMPackageDeployer.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPackageDeployer\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPackageDeployer\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMPackSolution", "MSCRMPackSolution", "{AE562918-60B7-4F4A-A3DE-A7E1C8CEA3DA}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPackSolution\MSCRMPackSolution.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPackSolution\MSCRMPackSolution.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPackSolution\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPackSolution\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMPing", "MSCRMPing", "{9429DD21-BA4E-4A94-9A42-27238E8D582B}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPing\MSCRMPing.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPing\MSCRMPing.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPing\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPing\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMPublishCustomizations", "MSCRMPublishCustomizations", "{6D0039BB-43D7-4424-B962-B1F56F65E5C2}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPublishCustomizations\MSCRMPublishCustomizations.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPublishCustomizations\MSCRMPublishCustomizations.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPublishCustomizations\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMPublishCustomizations\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extension", "Extension", "{0F51EB44-F666-43BE-BD77-E0E00C2C0347}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Extension\icon_128x128.png = Xrm.Framework.CI.VSTS.BuildTasks\Extension\icon_128x128.png
+		Xrm.Framework.CI.VSTS.BuildTasks\Extension\license.txt = Xrm.Framework.CI.VSTS.BuildTasks\Extension\license.txt
+		Xrm.Framework.CI.VSTS.BuildTasks\Extension\overview.md = Xrm.Framework.CI.VSTS.BuildTasks\Extension\overview.md
+		Xrm.Framework.CI.VSTS.BuildTasks\Extension\vss-extension.json = Xrm.Framework.CI.VSTS.BuildTasks\Extension\vss-extension.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{349BF424-9F2C-4B78-A688-25320D17BB3C}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Lib\icon.png = Xrm.Framework.CI.VSTS.BuildTasks\Lib\icon.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Screenshots", "Screenshots", "{CE2E80E0-3570-4E48-8810-FDD6276D6BD1}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Extension\Screenshots\TaskCatalog_Build.png = Xrm.Framework.CI.VSTS.BuildTasks\Extension\Screenshots\TaskCatalog_Build.png
+		Xrm.Framework.CI.VSTS.BuildTasks\Extension\Screenshots\TaskCatalog_Deploy.png = Xrm.Framework.CI.VSTS.BuildTasks\Extension\Screenshots\TaskCatalog_Deploy.png
+		Xrm.Framework.CI.VSTS.BuildTasks\Extension\Screenshots\TaskCatalog_Utility.png = Xrm.Framework.CI.VSTS.BuildTasks\Extension\Screenshots\TaskCatalog_Utility.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{83E4A838-01DB-4D10-BA5C-B1D93DB546DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMSetVersion", "MSCRMSetVersion", "{4FD15793-4498-462F-A5AA-B75E4F6D87F4}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMSetVersion\MSCRMSetVersion.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMSetVersion\MSCRMSetVersion.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMSetVersion\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMSetVersion\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMBackupOnlineInstance", "MSCRMBackupOnlineInstance", "{71BA7451-0E6A-4555-840D-7C98F596787E}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMBackupOnlineInstance\MSCRMBackupOnlineInstance.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMBackupOnlineInstance\MSCRMBackupOnlineInstance.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMBackupOnlineInstance\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMBackupOnlineInstance\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMProvisionOnlineInstance", "MSCRMProvisionOnlineInstance", "{8EF5BEBD-D133-487C-A7B3-1A4A6622D56F}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMProvisionOnlineInstance\MSCRMProvisionOnlineInstance.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMProvisionOnlineInstance\MSCRMProvisionOnlineInstance.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMProvisionOnlineInstance\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMProvisionOnlineInstance\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMDeleteOnlineInstance", "MSCRMDeleteOnlineInstance", "{18CE11F7-EF38-40F6-B68B-60A321697FC9}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMDeleteOnlineInstance\MSCRMDeleteOnlineInstance.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMDeleteOnlineInstance\MSCRMDeleteOnlineInstance.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMDeleteOnlineInstance\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMDeleteOnlineInstance\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMRestoreOnlineInstance", "MSCRMRestoreOnlineInstance", "{6B4C12FE-71EE-4607-902B-2DCBBAB421C0}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMRestoreOnlineInstance\MSCRMRestoreOnlineInstance.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMRestoreOnlineInstance\MSCRMRestoreOnlineInstance.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMRestoreOnlineInstance\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMRestoreOnlineInstance\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMGetOnlineInstanceByName", "MSCRMGetOnlineInstanceByName", "{48E83348-0B04-4DF6-A45A-8080572C1DD0}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMGetOnlineInstanceByName\MSCRMGetOnlineInstanceByName.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMGetOnlineInstanceByName\MSCRMGetOnlineInstanceByName.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMGetOnlineInstanceByName\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMGetOnlineInstanceByName\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMUpdateSecureConfiguration", "MSCRMUpdateSecureConfiguration", "{D53745C7-9D26-417B-A305-1C5A6824A643}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMUpdateSecureConfiguration\MSCRMUpdateSecureConfiguration.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMUpdateSecureConfiguration\MSCRMUpdateSecureConfiguration.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMUpdateSecureConfiguration\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMUpdateSecureConfiguration\task.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSCRMSetOnlineInstanceAdminMode", "MSCRMSetOnlineInstanceAdminMode", "{9DD9CB39-AD1A-425C-8BC7-A51273AB11D8}"
+	ProjectSection(SolutionItems) = preProject
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMSetOnlineInstanceAdminMode\MSCRMSetOnlineInstanceAdminMode.ps1 = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMSetOnlineInstanceAdminMode\MSCRMSetOnlineInstanceAdminMode.ps1
+		Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMSetOnlineInstanceAdminMode\task.json = Xrm.Framework.CI.VSTS.BuildTasks\Tasks\MSCRMSetOnlineInstanceAdminMode\task.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release_PS2|Any CPU = Release_PS2|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26E7A989-C329-4B54-A80D-200FC23306B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E7A989-C329-4B54-A80D-200FC23306B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E7A989-C329-4B54-A80D-200FC23306B9}.Release_PS2|Any CPU.ActiveCfg = Release|Any CPU
+		{26E7A989-C329-4B54-A80D-200FC23306B9}.Release_PS2|Any CPU.Build.0 = Release|Any CPU
+		{26E7A989-C329-4B54-A80D-200FC23306B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26E7A989-C329-4B54-A80D-200FC23306B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AF2D810-8E16-4AA1-B3F8-75EB17CF8A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF2D810-8E16-4AA1-B3F8-75EB17CF8A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF2D810-8E16-4AA1-B3F8-75EB17CF8A24}.Release_PS2|Any CPU.ActiveCfg = Release_PS2|Any CPU
+		{0AF2D810-8E16-4AA1-B3F8-75EB17CF8A24}.Release_PS2|Any CPU.Build.0 = Release_PS2|Any CPU
+		{0AF2D810-8E16-4AA1-B3F8-75EB17CF8A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF2D810-8E16-4AA1-B3F8-75EB17CF8A24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBFA729B-4215-487C-BD89-FD77A7B54C72} = {3763BBA8-F491-4D34-A047-D4ED12EDF387}
+		{C2B3F4B8-4BE8-45E7-9384-55F5F7F56CB8} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{67A59419-BDB6-49E9-A5EB-ECEC0F4C84BB} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{8E5BE35E-E21E-436E-BE6B-35E6D81C0ABE} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{AE562918-60B7-4F4A-A3DE-A7E1C8CEA3DA} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{9429DD21-BA4E-4A94-9A42-27238E8D582B} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{6D0039BB-43D7-4424-B962-B1F56F65E5C2} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{0F51EB44-F666-43BE-BD77-E0E00C2C0347} = {3763BBA8-F491-4D34-A047-D4ED12EDF387}
+		{349BF424-9F2C-4B78-A688-25320D17BB3C} = {3763BBA8-F491-4D34-A047-D4ED12EDF387}
+		{CE2E80E0-3570-4E48-8810-FDD6276D6BD1} = {0F51EB44-F666-43BE-BD77-E0E00C2C0347}
+		{83E4A838-01DB-4D10-BA5C-B1D93DB546DC} = {0F51EB44-F666-43BE-BD77-E0E00C2C0347}
+		{4FD15793-4498-462F-A5AA-B75E4F6D87F4} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{71BA7451-0E6A-4555-840D-7C98F596787E} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{8EF5BEBD-D133-487C-A7B3-1A4A6622D56F} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{18CE11F7-EF38-40F6-B68B-60A321697FC9} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{6B4C12FE-71EE-4607-902B-2DCBBAB421C0} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{48E83348-0B04-4DF6-A45A-8080572C1DD0} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{D53745C7-9D26-417B-A305-1C5A6824A643} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+		{9DD9CB39-AD1A-425C-8BC7-A51273AB11D8} = {BBFA729B-4215-487C-BD89-FD77A7B54C72}
+	EndGlobalSection
+EndGlobal
